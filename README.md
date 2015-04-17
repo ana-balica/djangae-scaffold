@@ -8,7 +8,7 @@ To get started:
  - Clone this repo (don't forget to change the origin to your own repo!)
  - Run `./install_deps` (this will pip install requirements, and download the App Engine SDK)
  - `python manage.py checksecure --settings=scaffold.settings_live`
- - `python manage.py runserver`
+ - `python manage.py runserver` (preferably use Python 2.7.8, as the App Engine SDK throws an exception when using Python 2.7.9)
 
 The install_deps helper script will install dependencies into a 'sitepackages' folder which is added to the path. Each time you run it your
 sitepackages will be wiped out and reinstalled with pip. The SDK will only be downloaded the first time (as it's a large download).
